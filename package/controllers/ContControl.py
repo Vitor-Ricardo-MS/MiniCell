@@ -26,7 +26,7 @@ class ContControl:
   'Exibir um parâmetro de uma contato: param\n' + 
   'Salvar mudanças: salvar\n\n' +
   'Exibir menu novamente: menu\n' +
-  'Sair do App: sair\n\n----------\n')
+  'Sair do App: sair\n\n--------------------------------------------------------------------------\n')
  
  def startMenu(self):
   self.showMenu()

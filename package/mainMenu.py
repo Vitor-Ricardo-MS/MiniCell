@@ -23,7 +23,7 @@ class mainMenu:
   'Calculadora simples: calc\n' + 
   'Contatos: cont\n' + 
   'Mensagens (Telegram Bot): msg\n\n' +
-  'Fechar o Programa: fechar\n\n----------\n')
+  'Fechar o Programa: fechar\n\n--------------------------------------------------------------------------\n')
  
  def startMenu(self):
   self.showMenu()

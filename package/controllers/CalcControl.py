@@ -37,14 +37,14 @@ class CalcControl:
   'Subtrair a resposta anterior do M: subRespM\n' +
   'Exibir M : exibirM\n\n' +
   'Exibir menu novamente: menu\n' +
-  'Sair do App: sair')
+  'Sair do App: sair\n\n--------------------------------------------------------------------------\n')
  
  def startMenu(self):
   self.showMenu()
   self.menu()
  
  def menu(self):
-  entrada = input('\nDigite a opção desejada: ')
+  entrada = input('Digite a opção desejada: ')
   nome = self.opcoes.get(entrada, self.default)
   nome()
   if(entrada == "sair"):

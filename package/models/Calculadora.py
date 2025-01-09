@@ -21,7 +21,7 @@ class Calculadora:
    b = float(y)
   
   resp = a+b
-  print(f'A soma de {a} e {b} é: {resp}')
+  print(f'A soma de {a} e {b} é: {resp}\n\n----------\n')
   Calculadora.resposta = resp
   
  @staticmethod
@@ -43,7 +43,7 @@ class Calculadora:
    b = float(y)
   
   resp = a*b
-  print(f'O produto de {a} e {b} é: {resp}')
+  print(f'O produto de {a} e {b} é: {resp}\n\n----------\n')
   Calculadora.resposta = resp
   
  @staticmethod
@@ -65,7 +65,7 @@ class Calculadora:
    b = float(y)
   
   resp = a-b
-  print(f'A diferença entre {a} e {b} é: {resp}')
+  print(f'A diferença entre {a} e {b} é: {resp}\n\n----------\n')
   Calculadora.resposta = resp
   
  @staticmethod
@@ -87,7 +87,7 @@ class Calculadora:
    b = float(y)
   
   resp = a/b
-  print(f'A razão entre {a} e {b} é: {resp}')
+  print(f'A razão entre {a} e {b} é: {resp}\n\n----------\n')
   Calculadora.resposta = resp
   
  @staticmethod
@@ -109,7 +109,7 @@ class Calculadora:
    b = int(y)
   
   resp = a**b
-  print(f'{a} elevado a {b} é: {resp}')
+  print(f'{a} elevado a {b} é: {resp}\n\n----------\n')
   Calculadora.resposta = resp
   
  @staticmethod
@@ -122,13 +122,15 @@ class Calculadora:
    a = Calculadora.M
   else:
    a = int(x)
+   
+  tempa = a
   
   resp = a
   a -= 1
   while(a > 0):
    resp *= a
    a -= 1
-  print(f'{a} fatorial é: {resp}')
+  print(f'{tempa} fatorial é: {resp}\n\n----------\n')
   Calculadora.resposta = resp
   
  @staticmethod
@@ -150,7 +152,7 @@ class Calculadora:
    b = float(y)
   
   resp = a%b
-  print(f'A valor de {a} (mod {b}) é: {resp}')
+  print(f'A valor de {a} (mod {b}) é: {resp}\n\n----------\n')
   Calculadora.resposta = resp
   
  @staticmethod
@@ -165,12 +167,12 @@ class Calculadora:
    a = float(x)
   
   Calculadora.M += a
-  print(f'{a} foi adicionado a M')
+  print(f'{a} foi adicionado a M\n\n----------\n')
   
  @staticmethod
  def addMResp():
   Calculadora.M += Calculadora.resposta
-  print(f'{Calculadora.resposta} foi adicionado a M')
+  print(f'{Calculadora.resposta} foi adicionado a M\n\n----------\n')
   
  @staticmethod
  def subM():
@@ -184,15 +186,15 @@ class Calculadora:
    a = float(x)
   
   Calculadora.M -= a
-  print(f'{a} foi subtraido de M')
+  print(f'{a} foi subtraido de M\n\n----------\n')
   
  @staticmethod
  def subMResp():
   Calculadora.M -= Calculadora.resposta
-  print(f'{Calculadora.resposta} foi subtraido de M')
+  print(f'{Calculadora.resposta} foi subtraido de M\n\n----------\n')
   
  @staticmethod
  def showM():
-  print(f'O valor atual de M é: {Calculadora.M}')
+  print(f'O valor atual de M é: {Calculadora.M}\n\n----------\n')
 
 

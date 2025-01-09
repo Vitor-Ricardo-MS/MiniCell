@@ -19,7 +19,7 @@ class TeleBotCont:
   'Enviar uma mensagem: msg\n' +
   'Salvar um novo ID do telegram: newid\n\n' +
   'Exibir menu novamente: menu\n' +
-  'Sair do App: sair\n\n----------\n')
+  'Sair do App: sair\n\n--------------------------------------------------------------------------\n')
  
  def startMenu(self):
   self.showMenu()
@@ -43,7 +43,7 @@ class TeleBotCont:
   if self.pessoas.verify_name(pessoa):
    chatid = self.pessoas.return_param(pessoa, 'teleid')
   else:
-   print(f'Essa pessoa não existe.\n')
+   print(f'Essa pessoa não existe.\n\n----------\n')
    return False
 
   self.bot = TeleBot()
@@ -67,7 +67,7 @@ class TeleBotCont:
    test = input()
    
    if test != 'enviado':
-    print(f'\nResposta inesperada!')
+    print(f'\nResposta inesperada!\n\n----------\n')
     return False
    
    tempid = asyncio.run(self.bot.save_chatid())
@@ -79,5 +79,5 @@ class TeleBotCont:
    
    return True
   else:
-   print(f'Essa pessoa não existe.\n')
+   print(f'Essa pessoa não existe.\n\n----------\n')
    return False
