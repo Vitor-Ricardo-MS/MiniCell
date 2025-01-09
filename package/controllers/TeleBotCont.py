@@ -7,7 +7,6 @@ class TeleBotCont:
  
  def __init__(self):
   
-  self.pessoas = DataRecord("dataContatos.json")
   self.opcoes = {
    'msg': self.speak,
    'newid': self.save_chatid,
@@ -31,6 +30,7 @@ class TeleBotCont:
   nome = self.opcoes.get(entrada, self.default)
   if(entrada == "sair"):
    return False
+  self.pessoas = DataRecord("dataContatos.json")
   nome()
   self.default()
  
