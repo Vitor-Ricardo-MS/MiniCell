@@ -19,7 +19,7 @@ class TeleBot():
 	async def save_chatid(self):
 		update = await self.bot.getUpdates(-1, 1, 100)
 		
-		print(f'\n"{update[0].message.text}" was sent by ({update[0].message.chat_id})')
+		print(f'\n"{update[0].message.text}" foi enviado por ({update[0].message.chat_id})')
 		
 		return update[0].message.chat_id
 		
