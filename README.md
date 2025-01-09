@@ -6,6 +6,7 @@ Para que este programa funcione é necessário a instalação do repositório do
 	pip install python-telegram-bot --upgrade
 	
 Manual de uso:
+	Para rodar o programa, rode o arquivo main.py
 
 	Menus:
 		Para escolher qual opção do menu é desejada, escreva aquilo que está escrito após os dois pontos na opção desejada.
